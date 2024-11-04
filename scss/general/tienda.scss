@@ -1,0 +1,409 @@
+
+
+
+
+
+header{
+    .navbar-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+   
+    
+    
+}
+
+
+
+
+
+
+#productos{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+     h1{
+        font-size: 50px;
+        font-family: 'Roboto Condensed', sans-serif;
+        text-align: center;
+    }
+
+    #catalogoProductos{
+        width: 100%;
+        height: auto;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: 0px;
+        margin-top: 50px;
+
+
+        @include mv-320 {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: none;
+            margin-left: none;
+        
+          }
+
+
+        @include mv(){
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: none;
+            margin-left: none;
+
+
+            
+        }
+        @include media-queri-480-576 {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: none;
+            margin-left: none;
+          }
+
+          @include media-query-577-768 {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: none;
+            margin-left: none;
+
+          }
+
+        .cartaproductos{
+            width: 360px;
+            height: 350px;
+            margin: 10px;
+            transition: 300ms;
+            background-color: white;
+
+
+            @include mv-320 {
+                display: flex;
+                flex-direction: column;
+                width: 180px;
+                display: flex;
+                flex-direction: column;
+                margin-top: 30px;
+               
+            
+              }
+
+            @include mv(){
+                display: flex;
+                flex-direction: column;
+                width: 220px;
+                display: flex;
+                flex-direction: column;
+                margin-top: 30px;
+                
+            }
+
+            @include media-queri-480-576 {
+                display: flex;
+                flex-direction: column;
+                width: 220px;
+                display: flex;
+                flex-direction: column;
+                margin-top: 30px;
+                
+              }
+
+              @include media-query-577-768 {
+                display: flex;
+                flex-direction: column;
+                width: 220px;
+                display: flex;
+                flex-direction: column;
+                margin-top: 30px;
+    
+              }
+
+            .iproducto,.iproducto_2,.iproducto_3{
+
+                height: 350px;
+                width: 350px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10%;
+                background-color: #DAA520;
+                transition: 300ms;
+                position: absolute;
+
+                @include mv-320 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    width: 200px;
+                    
+                  }
+
+                @include mv(){
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    width: 250px;
+                    
+                    
+                }
+
+                @include media-queri-480-576 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    width: 300px;
+                  }
+
+                  @include media-query-577-768 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    width: 300px;
+        
+                  }
+
+
+                .imagen_producto{
+                    height: 170px;
+                    width: 180px;
+                    background-image: url(../imagenes/productosinfondo1.png);
+                    background-size: cover;
+                    margin-bottom: 200px;
+                    transition: 300ms;
+                    filter: drop-shadow(5px -4px 10px black);
+
+
+                    
+                }
+
+                .imagen_producto_2{
+                    height: 200px;
+                    width: 180px;
+                    background-image: url(../imagenes/productosinfondo2.png) ;
+                    background-size: cover;
+                    margin-bottom: 200px;
+                    transition: 300ms;
+                    filter: drop-shadow(5px -4px 10px black);
+
+
+                    
+                }
+
+                .imagen_producto_3{
+                    height: 200px;
+                    width: 180px;
+                    background-image: url(../imagenes/productosinfondo3.png);
+                    background-size: cover;
+                    margin-bottom: 200px;
+                    transition: 300ms;
+                    filter: drop-shadow(5px -4px 10px black);
+
+
+                    
+                }
+
+
+
+
+                .detalle,.detalle_2,.detalle_3{
+                    height: 200px;
+                    width: 300px;
+                    background-color: white;
+                    position: absolute;
+                    border-bottom-left-radius: 10%;
+                    border-bottom-right-radius: 10%;
+                    margin-top: 150px;
+                    z-index: 2;
+                    display: grid;
+                    grid-template-rows: 1fr 1fr 1fr;
+                    transition: 300ms;
+
+                    
+
+
+
+                   
+                     
+                  
+
+                  
+                    p{
+                        margin: auto;
+                        width: 90%;
+                        font-size: 15px;
+                        font-family: 'Open Sans', sans-serif;
+
+                        @include mv-320 {
+                            font-size: 10px;
+                            margin: 0;
+                            width: 60%;
+                            text-align: center;
+                            margin-left: 60px;
+                
+                        
+                          }
+
+                       
+                    }
+
+                    .btn{
+
+                        width: 100px;
+                        margin: auto;
+                        cursor: pointer;
+                        background-color: #DAA520;
+                        padding: 10px 20px;
+                        border-radius: 5px;
+                        transition: transform 0.3s ease;
+
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+
+
+                    }
+                }
+
+
+                .detalle h2{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 18px;
+                    font-family: 'Montserrat', sans-serif;
+                    text-align: center;
+                    @include mv-320 {
+                        font-size: 14px;
+            
+                    
+                      }
+                    
+                   
+
+                   
+
+                }
+
+                .detalle_2 h2{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 18px;
+                    font-family: 'Montserrat', sans-serif;
+                    text-align: center;
+
+                    @include mv-320 {
+                        font-size: 14px;
+            
+                    
+                      }
+
+                }
+
+                .detalle_3 h2{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 18px;
+                    font-family: 'Montserrat', sans-serif;
+                    text-align: center;
+                    @include mv-320 {
+                        font-size: 14px;
+            
+                    
+                      }
+
+                }
+                
+
+
+            }
+
+
+            &:hover .imagen_producto{
+                transform: translateY(-40px);
+                transition: 300ms;
+                filter: none;
+                background-image: url(../imagenes/modelo1.png);
+
+            }
+            &:hover .imagen_producto_2{
+                transform: translateY(-40px);
+                transition: 300ms;
+                filter: none;
+                background-image: url(../imagenes/modelo2.png);
+
+            }
+            &:hover .imagen_producto_3{
+                transform: translateY(-40px);
+                transition: 300ms;
+                filter: none;
+                background-image: url(../imagenes/modelo3.png);
+
+            }
+
+            &:hover .iproducto{
+                background-image: radial-gradient(white,purple);
+            }
+
+            &:hover .iproducto_2{
+                background-image: radial-gradient(white,#FFD700);
+            }
+
+            &:hover .iproducto_3{
+                background-image: radial-gradient(white,#E0E0E0 );
+            }
+
+
+
+            
+        
+        
+                    
+                
+                
+            
+
+           
+        
+            
+        }
+        
+    }
+    
+    
+}
+
+
